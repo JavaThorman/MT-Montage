@@ -1,0 +1,98 @@
+/* src/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10; /* Ensures the navbar stays on top */
+    box-shadow: 0 4px 2px -2px gray; /* Adds a subtle shadow to make it stand out */
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 40px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Adds a little padding around the links */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  nav ul li a:hover {
+    color: hwb(172 7% 16%); /* Changes the text color on hover */
+    background-color: rgba(238, 237, 235, 0.2); /* Adds a background color on hover */
+    border-radius: 5px; /* Rounds the corners on hover */
+  }
+  
+  /* Left-side navigation */
+  .top-nav-left {
+    position: relative;
+  }
+  
+  /* Right-side navigation */
+  .top-nav-right {
+    position: relative;
+    margin-left: auto; /* Pushes the right side navigation to the right */
+    display: flex;
+    justify-content: flex-end; /* Ensures the right navigation is aligned to the right */
+  }
+  
+  /* To adjust for the fixed header and avoid overlap */
+  main {
+    padding-top: 60px; /* Adjust for the fixed header */
+    padding: 20px;
+  }
+ /* BELOW IS FOR THE HOMEPAGE */
+  .homepage {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    height:18vh;
+    text-align: center;
+  }
+  .homepage-image {
+    display: block;
+    margin: 10 auto; /* Centers the image horizontally */
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    height: 0; /* Keeps the aspect ratio of the image */
+  }
+
+  /* BELOW IS FOR THE CONTACTPAGE */
+  .contactpage {
+    
+  }
+
+
+  /* BELOW IS FOR THE SHOWCASEPAGE */
+  .showcasepage {
+
+  }
+
+  
+  h1 {
+    color: #333;
+  }
+  
