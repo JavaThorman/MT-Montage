@@ -3,11 +3,9 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div>className="contactpage
-    
+    <div className="contactpage">
       <h1>Contact Us</h1>
-      <p>Feel free to reach out to us!</p>
-    <embed></embed>
+      <p>Email: <a href="mailto:montageinredning@mt.com">montageinredning@mt.com</a></p>
     </div>
   );
 }

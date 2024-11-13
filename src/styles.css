@@ -1,98 +1,105 @@
 /* src/styles.css */
+
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 10; /* Ensures the navbar stays on top */
-    box-shadow: 0 4px 2px -2px gray; /* Adds a subtle shadow to make it stand out */
-  }
-  
-  nav {
-    display: flex;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 40px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px; /* Adds a little padding around the links */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition on hover */
-  }
-  
-  nav ul li a:hover {
-    color: hwb(172 7% 16%); /* Changes the text color on hover */
-    background-color: rgba(238, 237, 235, 0.2); /* Adds a background color on hover */
-    border-radius: 5px; /* Rounds the corners on hover */
-  }
-  
-  /* Left-side navigation */
-  .top-nav-left {
-    position: relative;
-  }
-  
-  /* Right-side navigation */
-  .top-nav-right {
-    position: relative;
-    margin-left: auto; /* Pushes the right side navigation to the right */
-    display: flex;
-    justify-content: flex-end; /* Ensures the right navigation is aligned to the right */
-  }
-  
-  /* To adjust for the fixed header and avoid overlap */
-  main {
-    padding-top: 60px; /* Adjust for the fixed header */
-    padding: 20px;
-  }
- /* BELOW IS FOR THE HOMEPAGE */
-  .homepage {
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    height:18vh;
-    text-align: center;
-  }
-  .homepage-image {
-    display: block;
-    margin: 10 auto; /* Centers the image horizontally */
-    max-width: 100%; /* Ensures the image doesn't overflow its container */
-    height: 0; /* Keeps the aspect ratio of the image */
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* BELOW IS FOR THE CONTACTPAGE */
-  .contactpage {
-    
-  }
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  box-shadow: 0 4px 2px -2px gray;
+}
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-  /* BELOW IS FOR THE SHOWCASEPAGE */
-  .showcasepage {
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
 
-  }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
 
-  
-  h1 {
-    color: #333;
-  }
-  
+nav ul li a:hover {
+  color: hwb(172 7% 16%);
+  background-color: rgba(238, 237, 235, 0.2);
+  border-radius: 5px;
+}
+
+main {
+  padding-top: 60px;
+  padding: 20px;
+}
+
+/* Home Page Styling */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.homepage-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+/* Contact Page Styling */
+.contactpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.contactpage a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Showcase Page Styling */
+.showcasepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.showcase-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.showcase-gallery img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
